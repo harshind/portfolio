@@ -2,23 +2,32 @@ html {
   font-size: 1rem;
 }
 
+body{
+  font-size: calc(12px + (17 - 12)* ((100vw - 300px)/(1600 - 300)))
+}
+/*
 @include media-breakpoint-up(sm) {
   html {
-    font-size: 1.2rem;
+    font-size: 1.2vw;
   }
 }
 
 @include media-breakpoint-up(md) {
   html {
-    font-size: 1.4rem;
+    font-size: 1.4vw;
   }
 }
 
 @include media-breakpoint-up(lg) {
   html {
-    font-size: 1.6rem;
+    font-size: 1.6vw;
   }
 }
+*/
+
+.btn-gradient{
+  background: rgb(4,125,197);
+background: linear-gradient(90deg, rgba(4,125,197,1) 72%, rgba(2,178,232,1) 89%, rgba(0,212,255,1) 100%);}
 
 
 .slidecontainer {

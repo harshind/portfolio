@@ -12,7 +12,8 @@ const skillData = [
 	"HTML|80",
 	"CSS|80",
 	"React|40",
-	"Bootstrap|80"
+	"Bootstrap|80",
+	"Postgres|75"
 ]
 
 function createRow(skillData){
@@ -26,7 +27,7 @@ function createRow(skillData){
 		skill.style ="font-size:26px";
 		skill.innerHTML =arr[0]
 		const experience = document.createElement('div')
-		experience.classList.add('sliderContainer','col-lg-8')
+		experience.classList.add('sliderContainer','col-lg-8',"pt-3")
 		const input = document.createElement('input');
 		input.setAttribute('type', "range");
 		input.setAttribute('min',"1");
